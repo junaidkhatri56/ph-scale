@@ -1,68 +1,73 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-html{
-    font-size: 62.5%;
+
+html {
+    font-size: 62.5%; /* 1rem = 10px for easier rem calculations */
 }
-body{
+
+body {
     background-color: #c4c4c4;
 }
-.sec-1 h1{
-      font-size: 30px;
-      padding: 15px;
-      background-color: white;
-      margin: 40px 35px 15px;
+
+.sec-1 h1 {
+    font-size: 2.5rem; /* Scalable font size */
+    padding: 1.5rem;
+    background-color: white;
+    margin: 4rem 2rem 1.5rem;
+    text-align: center;
 }
-.sec-2 p{
-    font-size: 18px;
+
+.sec-2 p {
+    font-size: 1.8rem; /* Scalable font size */
     color: white;
-    margin: 0 35px;
-    padding: 5px 5px;
+    margin: 0 2rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
 }
-.bg-1{
-    background-color: rgb(0, 119, 255);
+
+/* Color backgrounds for the pH scale items */
+.bg-1 { background-color: rgb(0, 119, 255); }
+.bg-2 { background-color: rgb(40, 139, 252); }
+.bg-3 { background-color: rgb(69, 154, 250); }
+.bg-4 { background-color: rgb(94, 169, 255); }
+.bg-5 { background-color: rgb(123, 185, 255); }
+.bg-6 { background-color: rgb(147, 195, 250); }
+.bg-7 { background-color: rgb(177, 213, 253); }
+.bg-8 { background-color: rgb(19, 134, 67); }
+.bg-9 { background-color: rgb(255, 163, 217); }
+.bg-10 { background-color: rgb(255, 141, 207); }
+.bg-11 { background-color: rgb(255, 117, 198); }
+.bg-12 { background-color: rgb(255, 96, 189); }
+.bg-13 { background-color: rgb(255, 67, 177); }
+.bg-14 { background-color: rgb(250, 35, 160); }
+.bg-15 { background-color: rgb(255, 0, 149); }
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .sec-1 h1 {
+        font-size: 2.2rem;
+        margin: 3rem 1.5rem 1rem;
+    }
+
+    .sec-2 p {
+        font-size: 1.6rem;
+        margin: 0 1.5rem;
+    }
 }
-.bg-2{
-    background-color: rgb(40, 139, 252);
-}
-.bg-3{
-    background-color: rgb(69, 154, 250);
-}
-.bg-4{
-    background-color: rgb(94, 169, 255);
-}
-.bg-5{
-    background-color: rgb(123, 185, 255);
-}
-.bg-6{
-    background-color: rgb(147, 195, 250);
-}
-.bg-7{
-    background-color: rgb(177, 213, 253);
-}
-.bg-8{
-    background-color: rgb(19, 134, 67);
-}
-.bg-15{
-    background-color: rgb(255, 0, 149);
-}
-.bg-14{
-    background-color: rgb(250, 35, 160);
-}
-.bg-13{
-    background-color: rgb(255, 67, 177);
-}
-.bg-12{
-    background-color: rgb(255, 96, 189);
-}
-.bg-11{
-    background-color: rgb(255, 117, 198);
-}
-.bg-10{
-    background-color: rgb(255, 141, 207);
-}
-.bg-9{
-    background-color: rgb(255, 163, 217);
+
+@media (max-width: 480px) {
+    .sec-1 h1 {
+        font-size: 2rem;
+        margin: 2.5rem 1rem 0.5rem;
+    }
+
+    .sec-2 p {
+        font-size: 1.4rem;
+        margin: 0 1rem;
+        padding: 0.8rem;
+    }
 }
